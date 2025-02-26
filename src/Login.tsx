@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import NavigationButton from './components/NavigationButton';
 import { FC } from 'react';
+import login from './services/auth/login';
 
 const Login: FC = () => {
-  const handleClick = () => {}
+  const handleClick = () => {
+    login()
+  }
 
   return (
     <Wrapper>
